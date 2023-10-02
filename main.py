@@ -4,7 +4,7 @@ from time import sleep
 from telebot import types
 Owner = '5136116009'
 User_Ch = 'old_school_team'
-bot = telebot.TeleBot("6501680766:AAE-G-BU1-VMjJfXTfmWPdUM_jlhKRgA83w")
+bot = telebot.TeleBot("6501680766:AAH6VvS1xz5JA7SrlNtsWZp5N7QwHHIPuLQ")
 @bot.message_handler(commands=['start'])
 def start(message):
   Id_Member = message.from_user.id
