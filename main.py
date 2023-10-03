@@ -4,11 +4,11 @@ from time import sleep
 from telebot import types
 Owner = '5136116009'
 User_Ch = 'old_school_team'
-bot = telebot.TeleBot("6501680766:AAH6VvS1xz5JA7SrlNtsWZp5N7QwHHIPuLQ")
+bot = telebot.TeleBot("66501680766:AAH6VvS1xz5JA7SrlNtsWZp5N7QwHHIPuLQ")
 @bot.message_handler(commands=['start'])
 def start(message):
   Id_Member = message.from_user.id
-  Check_Member = requests.get(f"https://api.telegram.org/bot6501680766:AAE-G-BU1-VMjJfXTfmWPdUM_jlhKRgA83w/getchatmember?chat_id=@{User_Ch}&user_id={Id_Member}").text
+  Check_Member = requests.get(f"https://api.telegram.org/bot6501680766:AAH6VvS1xz5JA7SrlNtsWZp5N7QwHHIPuLQ/getchatmember?chat_id=@{User_Ch}&user_id={Id_Member}").text
   if Id_Member == Owner or "member" in Check_Member or "creator" in Check_Member or "administrator" in Check_Member:
     bot.reply_to(message,"- Welcome To Flikers BOT\n\n- This Bot Give You Unlimited FaceBook Likes\n\n- Programer : @WHI3PER\n\n- Send Facebook Cookies")
   else:
